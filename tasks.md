@@ -1,0 +1,28 @@
+# Migración a Django + Vue.js
+
+- [x] Inicializar proyecto Django backend
+    - [x] Instalar dependencias (django, djangorestframework, django-cors-headers, requests)
+    - [x] Crear proyecto `backend` y aplicación `api`
+    - [x] Configurar CORS
+- [x] Crear Modelos y API (Django)
+    - [x] Modelo `Negocio` y serializador
+    - [x] Modelo `Evento` y serializador
+    - [x] Vistas de Django REST Framework (endpoints)
+    - [x] Endpoint `/api/news/` para realizar la petición a NewsAPI usando la llave `e9707b96692d4e51b5340afdb151c8c4`
+- [x] Poblar la base de datos (Django)
+    - [x] Importar los datos estáticos actuales a la base de datos SQLite
+- [x] Inicializar proyecto Vue.js frontend
+    - [x] Crear aplicación Vue usando Vite
+    - [x] Instalar dependencias npm (`tailwindcss`, `three`, `leaflet`, `fullcalendar`, `axios`, `vue-router`)
+    - [x] Configurar TailwindCSS en Vite
+- [x] Migrar Interfaz a Componentes Vue
+    - [x] Convertir `index.html` en el componente raíz `App.vue`
+    - [x] Separar la cabecera 3D en `HeroHeader.vue`
+    - [x] Separar el directorio en `DirectoryMap.vue` y conectarlo a la API de Django
+    - [x] Separar el calendario en `CommunityCalendar.vue` y conectarlo a la API de Django
+    - [x] Separar las noticias en `NewsSection.vue` y conectarlo al endpoint `/api/news/`
+- [ ] Pruebas e Integración Final
+    - [ ] Levantar servidor Django
+    - [ ] Levantar servidor Vite
+    - [ ] Verificar funcionamiento en el navegador
+- [ ] Limpieza del repositorio antiguo

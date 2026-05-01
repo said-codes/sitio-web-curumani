@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Barrio El Paraíso - Comunidad UNAD</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-fixed": "#ffdcbd",
+                        "surface-container-high": "#e8e8e8",
+                        "on-tertiary-fixed-variant": "#693c00",
+                        "on-primary-fixed-variant": "#004a76",
+                        "primary-fixed": "#cee5ff",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "primary": "#004269",
+                        "outline": "#717880",
+                        "surface-tint": "#166396",
+                        "on-secondary-fixed": "#271900",
+                        "on-background": "#1a1c1c",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-container": "#a0d0ff",
+                        "inverse-primary": "#96ccff",
+                        "secondary": "#7c5800",
+                        "on-tertiary-container": "#ffbe7c",
+                        "surface": "#f9f9f9",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#5e4200",
+                        "outline-variant": "#c1c7d0",
+                        "primary-fixed-dim": "#96ccff",
+                        "on-surface": "#1a1c1c",
+                        "secondary-fixed": "#ffdea8",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#2c1600",
+                        "tertiary-container": "#7e4900",
+                        "error-container": "#ffdad6",
+                        "background": "#f9f9f9",
+                        "on-primary-fixed": "#001d32",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#5d3500",
+                        "surface-variant": "#e2e2e2",
+                        "tertiary-fixed-dim": "#ffb86e",
+                        "surface-dim": "#dadada",
+                        "inverse-on-surface": "#f1f1f1",
+                        "secondary-fixed-dim": "#fbbc3a",
+                        "on-secondary-container": "#704e00",
+                        "secondary-container": "#ffbe3c",
+                        "primary-container": "#005a8d",
+                        "inverse-surface": "#2f3131",
+                        "surface-bright": "#f9f9f9",
+                        "on-surface-variant": "#41474f",
+                        "surface-container-low": "#f3f3f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "section-padding": "80px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Public Sans"],
+                        "label-md": ["Public Sans"],
+                        "caption": ["Public Sans"],
+                        "h2": ["Public Sans"],
+                        "h1": ["Public Sans"],
+                        "body-md": ["Public Sans"],
+                        "h3": ["Public Sans"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "600"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "400"}],
+                        "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "h1": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .unad-gradient {
+            background: linear-gradient(135deg, #005A8D 0%, #F39200 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-surface">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-[100] bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+<div class="flex justify-between items-center h-20 px-8 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<span class="text-xl font-black text-[#005A8D]">Barrio El Paraíso</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Public_Sans'] text-sm font-bold tracking-wide text-[#005A8D] border-b-2 border-[#005A8D] pb-1" href="#">Inicio</a>
+<a class="font-['Public_Sans'] text-sm font-medium tracking-wide text-slate-600 hover:text-[#005A8D] transition-all cursor-pointer" href="#">Noticias</a>
+<a class="font-['Public_Sans'] text-sm font-medium tracking-wide text-slate-600 hover:text-[#005A8D] transition-all cursor-pointer" href="#">Directorio</a>
+<a class="font-['Public_Sans'] text-sm font-medium tracking-wide text-slate-600 hover:text-[#005A8D] transition-all cursor-pointer" href="#">Servicios</a>
+<a class="font-['Public_Sans'] text-sm font-medium tracking-wide text-slate-600 hover:text-[#005A8D] transition-all cursor-pointer" href="#">Galería</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-[#005A8D]/10 border border-[#005A8D] rounded-full">
+<span class="material-symbols-outlined text-[#005A8D] text-sm">handshake</span>
+<span class="text-xs font-bold text-[#005A8D] tracking-tight">Comunidad UNAD</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-[600px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A wide panoramic view of a vibrant Colombian neighborhood community center at dusk. The warm golden hour sunlight bathes the modern brick buildings and lush green parks in a soft glow. Diverse groups of people are interacting harmoniously in a clean, professional urban setting. The overall mood is hopeful, communal, and progressive, featuring a palette of deep blues and sunset oranges." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhbAn_TXU50m2QUs--S_0XwxDFhsxnlj7rQzSkpfaRk2DuxZOFEOfvpnwfAn_lRSudKXg0R0FNUUmRKS5J8LhQO7X0DlksGty7iP1RgdgvIivP7qk3U9uKNfhkjIZRh4rIhhrDzfvfcCU5iraqI_QDxqc77j-fuNHYP_Z-sIhb-2Flbgwcz2jdeurP0XE3SLi_enizBsGJ97rhZ2XCC82h_M12npc7eA1ttYpdyWdUoLrYXk03IgJdW17U2Pvpvb3q0Uoc2jvsq0SP"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<h1 class="font-h1 text-h1 text-white mb-6">Bienvenidos al Barrio El Paraíso: Unidos por el Progreso</h1>
+<p class="font-body-lg text-body-lg text-white/90 mb-10">Construyendo una comunidad más fuerte, segura y conectada a través del Servicio Social UNAD.</p>
+<button class="unad-gradient text-white font-semibold py-4 px-10 rounded-lg shadow-lg hover:scale-105 transition-transform flex items-center gap-3">
+                    Conocer Más <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Noticias y Eventos -->
+<section class="py-20 px-8 max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">Actualidad</span>
+<h2 class="font-h2 text-h2 text-primary mt-2">Noticias y Eventos</h2>
+</div>
+<a class="text-primary font-semibold flex items-center gap-1 hover:underline" href="#">Ver todo <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- News Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_8px_30px_rgba(0,0,0,0.08)] transition-all group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional group of community leaders and students collaborating around a large table in a bright, modern office space. They are discussing urban development plans with maps and digital tablets. The lighting is natural and airy, reflecting a professional and organized civic atmosphere in the Barrio El Paraíso. The color scheme is dominated by clean whites and corporate blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPCVKVKjNu1PKX2taqHESeV0e6ZA3UBfwDyp8KWvoM_b-kylC8i8vhgppqw07DJKjFcGbRzthspoZFLGwU8BrO2r1aRXDF1mhXPE6qxi0T4V-hgYFJ_LKsm90OOvgyXBm61AQKkfc6Ez6-stY2ENzUhBevX51SJt-x48jqVQam9hWsG_4l3hOi_t3ZCkt5RuUrymY3X3beh3pJ5Ntjl8qCv_YGCLXhpFFQe1HU-7WrAlv7ouKN_QxysHkp4h9z9SO_1nOMxAGzLMdV"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-slate-500 text-caption font-caption mb-3">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                        24 de Octubre, 2024
+                    </div>
+<h3 class="font-h3 text-h3 text-primary mb-3">Jornada de Embellecimiento Comunitario</h3>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-2">Únete este sábado a la gran jornada de pintura y jardinería en el parque central del barrio.</p>
+</div>
+</article>
+<!-- News Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_8px_30px_rgba(0,0,0,0.08)] transition-all group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A bright classroom setting where a diverse group of elderly residents and young students are engaged in a digital literacy workshop. They are smiling while looking at laptop screens. The room is filled with soft, warm light and modern educational tools. The visual style is clean and high-end, emphasizing social progress and community education." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACGWyVWbGTaZR6Cw0jn8VyifuJXwKJPsZFJG23CI9S_dA86pqfy40w2GPv0ZlGDAqG0-qGj3uaIeeUY_UC2lc20rw_iKRECe88fDsZnK5igBZpSxAfvMOTfdvbXjdQ7JKKNwZZ3keDmWUWpUjH4Lv0bxNbeJFtU5I6PXWKdnMEMYaJBk4k615EcvrWa0YRLjOgrEXCeuNaRmBjHCnnhuD_IHBU0dhefO1y77XQJoCoRg5dufgeG1xGq9qEa14F-Nq-dkBUifIspO3Z"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-slate-500 text-caption font-caption mb-3">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                        20 de Octubre, 2024
+                    </div>
+<h3 class="font-h3 text-h3 text-primary mb-3">Taller de Alfabetización Digital UNAD</h3>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-2">Capacitación gratuita para adultos mayores en el uso de herramientas digitales y trámites en línea.</p>
+</div>
+</article>
+<!-- News Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_8px_30px_rgba(0,0,0,0.08)] transition-all group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A lively outdoor neighborhood meeting at night, illuminated by festive string lights and modern street lamps. Neighbors are sitting in chairs in a circle, talking and laughing. The atmosphere is warm, safe, and collaborative. The aesthetic is clean and high-contrast, with deep blues and glowing yellow accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVZHjmqFnQkviGK6i44QpPgVPJ5yjvmetGtVENffFmoquxCpOUDJ7cvBw7D0up7AtuEjnXL1TjT1FHC1Ogp2mmGMktDXg-OX9DWPPUd9qo9wC8f5uUi0LzrsvZWtdax5npc22op-7lduDONlyihcuEdp7yQefRoJBeH6PFjouNl19EUEPOxwcHpSVn6BuOHXTV48lDb56SOVMDRiT1WSrEa0aDDDhJYrydr9eIycImbB1EErdZ_EKJESqQ3Dc0YoVUEBGwe2wjwfYq"/>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-2 text-slate-500 text-caption font-caption mb-3">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                        15 de Octubre, 2024
+                    </div>
+<h3 class="font-h3 text-h3 text-primary mb-3">Reunión de Seguridad Ciudadana</h3>
+<p class="text-on-surface-variant font-body-md text-body-md line-clamp-2">Socialización de los nuevos puntos de vigilancia y red de apoyo comunitario para el sector sur.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Directorio de Negocios Locales (Bento Grid) -->
+<section class="py-20 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-h1 text-h1 text-primary">Comercio del Barrio</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">Apoya el talento local y descubre los mejores productos y servicios a la vuelta de tu casa.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[600px]">
+<div class="md:col-span-2 md:row-span-2 relative group rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A warm, inviting interior of a high-end local bakery. Freshly baked artisan breads are displayed on wooden shelves. Soft morning light enters through a large window, creating a cozy and clean atmosphere. The lighting highlights the golden textures of the bread. Professional food photography style with warm tones and deep blue accents in the background decor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqmqiUWGkGVI4HnqToNURcQtnpHw4oK4qAEAK8XGR2LznqxLMI3rsTBlIsFTsx-4bSDJlQJK-tevklR4UcKjRCJtajdP6Z9imvMHbt4Nu3aHZHLvJK-VYcxsO1WxUmZYeVuHTiFUeYKm9Q_vU9QYboCxhp6LrWn7XpEMdTWjQzptIfac1gpaLDmC4hcowjN-BMvBENdiSy_COrzK6TyCEtCT9TeZAVL66y1sQcntalXtbBAdAdG3ZFFFaZCJCsUhisxGGZGRbUZChC"/>
+<div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-8 group-hover:bg-black/20 transition-all">
+<span class="inline-block px-3 py-1 bg-secondary text-white text-xs font-bold rounded-full mb-2 w-fit uppercase">Negocio Local</span>
+<h4 class="text-white text-2xl font-bold">Panadería "El Buen Trato"</h4>
+<p class="text-white/80 font-medium">Pan artesanal y repostería fina desde 1995.</p>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A clean, well-organized local grocery store with fresh produce displayed in wooden crates. The lighting is bright and modern, creating a professional retail atmosphere. The vibrant colors of fruits and vegetables contrast beautifully with the minimalist interior. A high-end visual representation of local commerce in a modern neighborhood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBYWbKarXzgr_VbEL0CX-5FiuYZqAes5gNjpgxoBk2eEVy6vzmDZjUVs_Bw-g10aDk1q4lmKNNzZL5zBEtGwOpMqJs2zzM-blm67sh0jBQ5Y-UoHHbTxQISzi_uKN-dp0lujEy82LIqdOcQ7gDAcfszoPtFgZJ6S-2kLa5MUwy5LjnM3BHjdxsH8dxqGy0mfaFhfDqYgUkKH7fewsEEwpfXVgsZiY1m7l4oc9DjZz1WrY97_pecU6fneTvTDdh96IeQd5_x7RIY5mZ"/>
+<div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 group-hover:bg-black/20 transition-all">
+<span class="inline-block px-3 py-1 bg-secondary text-white text-xs font-bold rounded-full mb-2 w-fit uppercase">Negocio Local</span>
+<h4 class="text-white text-lg font-bold">Mini-Market Central</h4>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A modern, minimalist home goods store with clean white shelves and elegant kitchenware. The lighting is high-key and professional, giving a boutique feel. The atmosphere is sophisticated yet accessible, representing the growth of local businesses. Predominant colors are whites, light grays, and accents of primary blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuw943FuRiXMY1b6pyA5OKK96Ot3LBpxiwv3uZSDQ8KA9OTkbJUrkHX2jDLaGMecCCVq3ObRGP0ca7WPHroTmjcqiwOha7dkdw3SqXus2CbZtEm67pI_eIFUJGwfeU3v5NPVSfRO23zL2TcErlZP4XdPcvSXkc2pmr0MhWdLkNZvI80d5XB_QS_toF145dxsNbRu_X1bQH_oU9PY8hYL9yO8P2R6tJoEQCefPV7qHz0VZe88DYv3Eoax0MKsUF3-3hzxXvnB6Um-lB"/>
+<div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-6 group-hover:bg-black/20 transition-all">
+<span class="inline-block px-3 py-1 bg-secondary text-white text-xs font-bold rounded-full mb-2 w-fit uppercase">Negocio Local</span>
+<h4 class="text-white text-lg font-bold">Surtihogar Paraíso</h4>
+</div>
+</div>
+<div class="md:col-span-2 relative group rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="A professional workshop for local technical services, featuring organized tools and a clean workbench. The lighting is bright and focused. It conveys reliability and expertise. The scene is shot with a shallow depth of field, emphasizing the modern and professional nature of the service businesses in the community." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJwMEgi7j2yIl40dXmf9tdzDunwVxxCr9PwK7D0XKllIGYxRE7TXLEyz11xbwHOQfJzFoB6eKz8OUM-iFD6DsWKRr9JBe5fJE2BvsY7SQsrlnY_YMwJ91N7INUbnp_FPV2l6QGGLy6XC-beATVkycM24c6au3tneSrNSwKQWWF6DC8_AA_WsWgE_hLng9xI_XL5nPi9nXiakcsT9XZsNZN9W9VBR6OyScvPw8qPYi-KqNrHU0mAJ1fzexiNBAdIzixrAGeoQRRRNi-"/>
+<div class="absolute inset-0 bg-black/40 flex flex-col justify-end p-8 group-hover:bg-black/20 transition-all">
+<span class="inline-block px-3 py-1 bg-secondary text-white text-xs font-bold rounded-full mb-2 w-fit uppercase">Servicios Técnicos</span>
+<h4 class="text-white text-xl font-bold">Reparaciones "El Rayo"</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Servicios Públicos y Trámites -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-h1 text-h1 text-primary">Gestión Ciudadana</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">Accede a información sobre servicios públicos y realiza tus trámites municipales de forma ágil.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-[#005A8D]/10 flex items-center justify-center text-[#005A8D] mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">water_drop</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-3">Agua Potable</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Reportes de fugas, horarios de suministro y pago de facturas en línea.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-[#005A8D]/10 flex items-center justify-center text-[#005A8D] mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">lightbulb</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-3">Energía Eléctrica</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Mantenimiento de alumbrado público y gestión de cortes programados.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-[#005A8D]/10 flex items-center justify-center text-[#005A8D] mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">delete</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-3">Aseo Urbano</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Rutas de recolección, puntos de reciclaje y jornadas de limpieza.</p>
+</div>
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 rounded-full bg-[#005A8D]/10 flex items-center justify-center text-[#005A8D] mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-3xl">description</span>
+</div>
+<h3 class="font-h3 text-h3 text-primary mb-3">Trámites Municipales</h3>
+<p class="text-on-surface-variant font-body-md text-body-md">Certificados de vecindad, permisos de construcción y solicitudes legales.</p>
+</div>
+</div>
+</section>
+<!-- Galería Comunitaria (Asymmetric Layout) -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-12">
+<h2 class="font-h1 text-h1 text-primary">Nuestra Vida Cotidiana</h2>
+<p class="text-on-surface-variant mt-2">Capturando los mejores momentos de nuestra gente.</p>
+</div>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+<div class="rounded-xl overflow-hidden break-inside-avoid shadow-md">
+<img class="w-full object-cover" data-alt="A candid, artistic photograph of children playing happily in a modern neighborhood park. The lighting is soft and natural, emphasizing the joy and safety of the community. The background shows well-maintained greenery and clean pathways. Professional photography with a focus on vibrant colors and emotional connection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-PnuigoLxNGfzjQnQ3QgBCSTKtwTOBwdlRMknzjTbison2YDb7Y1v6_Z8ApuQu4S3RJpghOgc2EO9-Sk-y3K-omoy4Wa7zLMvZ0rTUnJFz8O6m33fbnH8YYO1laJiTl6UO8buGFfxDZIEzUyc78cZ5o3Fh6CpK-K-SF0BXkKVPUCwHYcRdbzQ5txwhsDQ1pds7zN65JFah5u_qNN2JJ72_padO3wGo3R-RAHKFoWBfRqwcL9zzPO4cpnj0NzodUjyCm_qjGuh2vJu"/>
+</div>
+<div class="rounded-xl overflow-hidden break-inside-avoid shadow-md">
+<img class="w-full object-cover" data-alt="A group of diverse neighbors gathered for a communal lunch at a long wooden table outdoors. They are sharing food and conversation. The setting is bright and festive, with a modern, high-end lifestyle aesthetic. The lighting is sunny and warm, reflecting a sense of abundance and unity in Barrio El Paraíso." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_z4FwW2XI6fGn1nrH55ighdJhoUGMY1X6qNvXFXxUkS5q4kNyONb4o7KGKohLKiSUbMFTxmDervL4EKnFvLB0BNZ4SEZ6Hlgc7Xf25ywIpqwNJ6QnE0fh6e64EayRG2ihDhgbGKYv_qAjEFfytl9L6wjB7XgVu0cVw_8L9mbJ6hcBK51yL_GynusUlaZbgk7ONyXfsPeCUb--pgdudfugHXcxkSG5YvIRRdaa-sK7iKA1v06NOl8S6WKH-kqiqMD0FvJ40XSVEd3R"/>
+</div>
+<div class="rounded-xl overflow-hidden break-inside-avoid shadow-md">
+<img class="w-full object-cover" data-alt="Three young people walking together in a modern urban park, talking and laughing. They represent the vibrant youth of the community. The lighting is golden hour, creating a warm and positive mood. The architectural details of the park in the background are sleek and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgsiWtmgH26xttd485v5drQzJWoyyr5jLhVRjHJAc1fyE7axbg80xOXmkmylGZQwEwW4CsXaaAX0Zumv8SvIpwV8XGpK5whVnLN2KUPm-lCxfRprkSOaQxEzwAllFd30C1rqW5dQCshjTQ6naDSEcvV9QIcFJm4MLJo18SfMgHEOohqh2mMMmq046Ipa0UDjk0wqKxbFKlm3ceJCLsuZBTQ_iyn1PTxcFCqxUXwD8VCa76rcfsgvKsVmwN1sHvxMjd-fU8bNk-j-Z-"/>
+</div>
+<div class="rounded-xl overflow-hidden break-inside-avoid shadow-md">
+<img class="w-full object-cover" data-alt="A professional shot of a community event with colorful flags and a clean, organized setup. The focus is on the festive yet structured nature of the neighborhood celebrations. The lighting is bright and clear, emphasizing the high-quality urban environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPgOOdSQrclEOcPuyBeljc8mzgJkc_J2nqK0MzrQFBmaBN679dxkRdO9c6PVL5jCCIzCw7N68cnVTtNfDPdhREFF22BoLtPWrtR5ZVD_9mQn3IbEsLkiTJ-PfYUHxAsln80_F51sE2iompSerMM26NnJ2I24xY6DHodwHx5r1lyfTvMo6Uy2meP4VRmwDGpWCGN_I7vfwJG6HsIb8fUyGbkl6vFjwcIY2WwhnB3IK-cTBDlZGxj-Od-ndQ7NJ7_Zp7_psS15aM3qh9"/>
+</div>
+<div class="rounded-xl overflow-hidden break-inside-avoid shadow-md">
+<img class="w-full object-cover" data-alt="A professional workshop scene where community members are brainstorming with sticky notes on a glass wall. The room is modern and well-lit. This represents the collaborative and organized progress of the community through UNAD social services. The style is corporate and clean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBchYC1Hid8FgseMRGfKr8xMuI5JggAraDUbPjaPw1JIdspxWjEfsLEw4Ty2fHsZnJVD930Qn1YNLZw6CA4MPZjsI21PrriKxRZbLWpK9TUC6q5gpWS8ZKnDj6Y6_wpVjRNZWPLlpOth8ANwc-4pCaZBB0irsoqrqKVTxrF1bZIJ0kvmFfYLc5LZlvqy2ir7NtwBVRRjqkv8qsdxAhLfeCkp48IKI5xj5GCLPoKm4uE_mCdr5ww6v4m0N2Vqcyo8OhYgpXcHhvBEBOA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200 w-full py-16 px-8 mt-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<h3 class="text-lg font-bold text-[#005A8D] mb-4">Barrio El Paraíso</h3>
+<p class="font-['Public_Sans'] text-sm leading-relaxed text-slate-500 mb-6">
+                    Un espacio digital diseñado para fortalecer los lazos de nuestra comunidad y promover el desarrollo integral de todos sus habitantes.
+                </p>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 px-4 py-2 bg-[#005A8D]/10 border border-[#005A8D] rounded-full">
+<span class="material-symbols-outlined text-[#005A8D] text-[18px]">handshake</span>
+<span class="text-xs font-bold text-[#005A8D]">Comunidad UNAD - Servicio Social</span>
+</div>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Enlaces Rápidos</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-[#005A8D] hover:underline transition-all" href="#">Inicio</a></li>
+<li><a class="text-slate-500 hover:text-[#005A8D] hover:underline transition-all" href="#">Directorio Local</a></li>
+<li><a class="text-slate-500 hover:text-[#005A8D] hover:underline transition-all" href="#">Servicios Públicos</a></li>
+<li><a class="text-slate-500 hover:text-[#005A8D] hover:underline transition-all" href="#">Privacidad</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-6">Contacto y Redes</h4>
+<p class="text-slate-500 text-sm mb-4">Curumaní, Cesar - Colombia</p>
+<div class="flex gap-4 mb-6">
+<a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all shadow-sm" href="#">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</a>
+</div>
+<div class="space-y-2">
+<p class="text-slate-500 text-xs">Facebook</p>
+<p class="text-slate-500 text-xs">Instagram</p>
+<p class="text-slate-500 text-xs">Twitter</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-12 mt-12 border-t border-slate-200 text-center">
+<p class="text-slate-500 text-sm">© 2024 Barrio El Paraíso - Comunidad UNAD Servicio Social. Todos los derechos reservados.</p>
+</div>
+</footer>
+</body></html>
