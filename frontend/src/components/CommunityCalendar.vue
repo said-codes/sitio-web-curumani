@@ -6,7 +6,7 @@
         <h2 class="font-h1 text-h1 text-primary mt-2">Agenda Comunitaria</h2>
         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">Mantente al tanto de todas las actividades, asambleas y jornadas de integración de nuestro municipio.</p>
       </div>
-      
+
       <div class="bg-white rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 max-w-5xl mx-auto border border-slate-100">
         <div v-if="loading" class="flex justify-center p-12">
           <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
@@ -56,10 +56,10 @@ const closeModal = () => {
 
 const formatDate = (date) => {
   if (!date) return ''
-  return new Date(date).toLocaleDateString('es-CO', { 
-    weekday: 'long', 
-    year: 'numeric', 
-    month: 'long', 
+  return new Date(date).toLocaleDateString('es-CO', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
     day: 'numeric',
     hour: '2-digit',
     minute: '2-digit'
@@ -70,7 +70,7 @@ onMounted(async () => {
   try {
     // Configura aquí la URL de tu backend en producción
     // const baseUrl = import.meta.env.PROD ? 'https://curumani-backend.onrender.com' : 'http://127.0.0.1:8000'
-    const baseUrl = 'http://127.0.0.1:8000' 
+    const baseUrl = 'https://sitio-web-curumani.onrender.com'
     const response = await axios.get(`${baseUrl}/api/eventos/`)
     const eventos = response.data
 

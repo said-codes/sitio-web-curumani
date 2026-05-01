@@ -5,15 +5,15 @@
         <h2 class="font-h1 text-h1 text-primary">Comercio del Barrio</h2>
         <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-4">Descubre los mejores productos y servicios locales en nuestro mapa interactivo.</p>
       </div>
-      
+
       <div class="bg-white rounded-2xl overflow-hidden shadow-lg h-[600px] flex flex-col md:flex-row relative">
         <!-- Sidebar List -->
         <div class="w-full md:w-1/3 h-64 md:h-full bg-surface-container-lowest border-r border-slate-200 overflow-y-auto p-4 flex flex-col gap-4 relative z-10 shadow-md">
           <div v-if="loading" class="flex justify-center p-8">
             <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
           </div>
-          
-          <div v-for="negocio in negocios" :key="negocio.id" 
+
+          <div v-for="negocio in negocios" :key="negocio.id"
                class="p-4 border border-slate-100 rounded-xl hover:bg-slate-50 cursor-pointer transition-colors shadow-sm"
                @click="centerMap(negocio)">
             <span class="inline-block px-2 py-1 bg-secondary text-white text-[10px] font-bold rounded-full mb-2 uppercase">{{ negocio.categoria }}</span>
@@ -26,7 +26,7 @@
             </p>
           </div>
         </div>
-        
+
         <!-- Map Container -->
         <div class="w-full md:w-2/3 h-full z-0 relative">
           <div id="business-map" class="w-full h-full"></div>
@@ -40,7 +40,7 @@
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
-// We will inject Leaflet dynamically to avoid SSR/bundler issues in standard setups, 
+// We will inject Leaflet dynamically to avoid SSR/bundler issues in standard setups,
 // but since we have it via npm, we can import it.
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -94,10 +94,10 @@ const centerMap = (negocio) => {
 
 onMounted(async () => {
   initMap()
-  
+
   try {
     // Configura aquí la URL de tu backend en producción
-    const baseUrl = 'http://127.0.0.1:8000'
+    const baseUrl = 'https://sitio-web-curumani.onrender.com'
     const response = await axios.get(`${baseUrl}/api/negocios/`)
     negocios.value = response.data
     addMarkers()

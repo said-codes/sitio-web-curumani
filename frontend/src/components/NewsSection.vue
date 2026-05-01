@@ -6,11 +6,11 @@
         <h2 class="font-h2 text-h2 text-primary mt-2">Noticias y Eventos</h2>
       </div>
     </div>
-    
+
     <div v-if="loading" class="flex justify-center py-12">
       <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
     </div>
-    
+
     <div v-else-if="error" class="text-center py-12 text-error">
       <p>{{ error }}</p>
     </div>
@@ -55,7 +55,7 @@ const formatDate = (dateString) => {
 onMounted(async () => {
   try {
     // Calling Django Backend API
-    const baseUrl = 'http://127.0.0.1:8000'
+    const baseUrl = 'https://sitio-web-curumani.onrender.com'
     const response = await axios.get(`${baseUrl}/api/news/`)
     if (response.data && response.data.articles) {
       newsList.value = response.data.articles
